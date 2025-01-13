@@ -155,6 +155,7 @@ public class AeropuertosController implements Initializable {
             stage.setScene(scene);
             stage.getIcons().add(new Image(getClass().getResourceAsStream("/imagenes/avion.png")));
             stage.setTitle("Ayuda HTML");
+            stage.setResizable(false);
             stage.initOwner(ventana);
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.showAndWait();

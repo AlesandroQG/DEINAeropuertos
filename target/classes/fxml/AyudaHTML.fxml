@@ -2,18 +2,20 @@
 
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TreeView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.web.WebView?>
 
-<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alesandro.aeropuertos.controller.AyudaHTMLController">
+<SplitPane dividerPositions="0.25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alesandro.aeropuertos.controller.AyudaHTMLController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+      <FlowPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" SplitPane.resizableWithParent="false">
          <children>
-            <TreeView fx:id="arbol" prefWidth="175.0" />
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="400.0">
+            <TreeView fx:id="arbol" prefWidth="200.0" />
+         </children>
+      </FlowPane>
+      <FlowPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" SplitPane.resizableWithParent="false">
          <children>
-            <WebView fx:id="visor" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="400.0" />
-         </children></AnchorPane>
+            <WebView fx:id="visor" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="600.0" />
+         </children>
+      </FlowPane>
   </items>
 </SplitPane>

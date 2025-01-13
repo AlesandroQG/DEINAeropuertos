@@ -31,15 +31,25 @@ public class AyudaHTMLController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        // Añadir items a la vista de árbol
         TreeItem<Help> rItem = new TreeItem<>(new Help("Raiz", ""));
-        TreeItem<Help> rRoot = new TreeItem<>(new Help("Introducción", "src/main/resources/help/html/index.html"));
+        TreeItem<Help> rRoot = new TreeItem<>(new Help("Introducción", "index.html"));
+        TreeItem<Help> r1 = new TreeItem<>(new Help("Login", "login.html"));
+        TreeItem<Help> r2 = new TreeItem<>(new Help("Menú Principal", "menu_principal.html"));
+        TreeItem<Help> r3 = new TreeItem<>(new Help("Gestión de Aeropuertos", "gestion_aeropuertos.html"));
+        TreeItem<Help> r4 = new TreeItem<>(new Help("Gestión de Aviones", "gestion_aviones.html"));
+        TreeItem<Help> r5 = new TreeItem<>(new Help("Conclusión", "conclusion.html"));
+        rRoot.getChildren().addAll(r1,r2,r3,r4,r5);
         rItem.getChildren().add(rRoot);
-        TreeItem<Help> rAena = new TreeItem<Help>(new Help("Aena", "https://www.aena.es/es/pasajeros/pasajeros.html)", false));
+        TreeItem<Help> rAena = new TreeItem<>(new Help("Aena", "https://www.aena.es/es/pasajeros/pasajeros.html", false));
         rItem.getChildren().add(rAena);
+        // Ajustar propiedades de la vista árbol
+        rRoot.setExpanded(true);
         arbol.setRoot(rItem);
         arbol.setShowRoot(false);
+        arbol.getSelectionModel().select(rRoot);
         webEngine = visor.getEngine();
-        webEngine.load(getClass().getResource("src/main/resources/help/html/index.html").toExternalForm());
+        webEngine.load(getClass().getResource("/help/html/index.html").toExternalForm());
         //Añadimos un evento para cambiar de html al pinchar en el árbol
         arbol.setOnMouseClicked(e -> {
             if (arbol.getSelectionModel().getSelectedItem() != null) {
@@ -60,7 +70,7 @@ public class AyudaHTMLController implements Initializable {
     private void cargarAyuda(String archivo, boolean local) {
         if (visor != null) {
             if (local) {
-                webEngine.load(getClass().getResource("help/html/" + archivo).toExternalForm());
+                webEngine.load(getClass().getResource("/help/html/" + archivo).toExternalForm());
             } else {
                 webEngine.load(archivo);
             }
@@ -76,19 +86,6 @@ public class AyudaHTMLController implements Initializable {
         Alert alerta = new Alert(Alert.AlertType.ERROR);
         alerta.setHeaderText(null);
         alerta.setTitle("ERROR");
-        alerta.setContentText(texto);
-        alerta.showAndWait();
-    }
-
-    /**
-     * Función que muestra un mensaje de confirmación al usuario
-     *
-     * @param texto contenido del mensaje
-     */
-    public void confirmacion(String texto) {
-        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-        alerta.setHeaderText(null);
-        alerta.setTitle("Info");
         alerta.setContentText(texto);
         alerta.showAndWait();
     }
