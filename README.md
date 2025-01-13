@@ -38,8 +38,9 @@ La estructura del proyecto es la siguiente:
         - `BorrarAvion.fxml`: Ventana para borrar aviones
         - `DatosAeropuerto.fxml`: Ventana para añadir un nuevo aeropuerto o editar uno existente
         - `Login.fxml`: Ventana para iniciar sesión en la aplicación
-      - `help.html`: Directorio con los ficheros html para la ayuda de la aplicación
-      - `help.pdf`: Directorio con los ficheros pdf para la ayuda de la aplicación
+      - `help`:
+        - `html`: Directorio con los ficheros html para la ayuda de la aplicación
+        - `pdf`: Directorio con los ficheros pdf para la ayuda de la aplicación
       - `imagenes`: Imágenes de la aplicación
       - `sql`:
         - `aeropuertos con imagen.sql`: Fichero para la creación de la base de datos en mariaDB

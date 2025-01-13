@@ -38,12 +38,21 @@
             <artifactId>jasperreports-chart-themes</artifactId>
             <version>7.0.1</version>
         </dependency>
+        <!--<dependency>
+            <groupId>com.idrsolutions</groupId>
+            <artifactId>jpedal</artifactId>
+            <version>8.5.0</version>
+        </dependency>-->
+
         <dependency>
-            <groupId>lib</groupId>
-            <artifactId>jPDFViewer</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jPDFViewer.v2022R1.23.jar</systemPath>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox-tools</artifactId>
+            <version>3.0.2</version>
         </dependency>
 
         <dependency>
@@ -59,6 +68,11 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
+            <version>22.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
             <version>22.0.1</version>
         </dependency>
 

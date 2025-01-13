@@ -25,6 +25,7 @@ import javafx.scene.input.MouseButton;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+import org.apache.pdfbox.pdmodel.PDDocument;
 
 /**
  * Clase que controla los eventos de la ventana de aeropuertos
@@ -170,7 +171,7 @@ public class AeropuertosController implements Initializable {
      */
     @FXML
     void ayudaPDF(ActionEvent event) {
-        //
+        //PDDocument document = PDDocument.load(getClass().getResourceAsStream("/help/pdf/UserGuide.pdf"))
     }
 
     /**

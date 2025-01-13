@@ -7,13 +7,13 @@
 
 <SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alesandro.aeropuertos.controller.AyudaHTMLController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
          <children>
             <TreeView fx:id="arbol" prefWidth="175.0" />
          </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="400.0">
          <children>
-            <WebView fx:id="visor" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+            <WebView fx:id="visor" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="400.0" />
          </children></AnchorPane>
   </items>
 </SplitPane>

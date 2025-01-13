@@ -38,6 +38,16 @@ public class Help {
     public Help() {}
 
     /**
+     * ToString de la ayuda
+     *
+     * @return título a mostrar en la vista árbol
+     */
+    @Override
+    public String toString() {
+        return text;
+    }
+
+    /**
      * Getter para el text
      *
      * @return text
