@@ -1,7 +1,12 @@
 package com.alesandro.aeropuertos.controller;
 
+import com.alesandro.aeropuertos.model.Help;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.TreeView;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -10,6 +15,13 @@ import java.util.ResourceBundle;
  * Clase que controla los eventos de la ventana de ayuda HTML
  */
 public class AyudaHTMLController implements Initializable {
+    @FXML // fx:id="arbol"
+    private TreeView<Help> arbol; // Value injected by FXMLLoader
+
+    @FXML // fx:id="visor"
+    private WebView visor; // Value injected by FXMLLoader
+    private WebEngine webEngine;
+
     /**
      * Función que se ejecuta cuando se carga la ventana
      *
