@@ -10,6 +10,7 @@ La estructura del proyecto es la siguiente:
             - `ActivarDesactivarAvionController.java`: Clase que controla los eventos de la ventana para activar/desactivar aviones
             - `AeropuertosController.java`: Clase que controla los eventos de la ventana principal de la aplicación
             - `AniadirAvionController.java`: Clase que controla los eventos de la ventana que añade aviones
+            - `AyudaHTMLController.java`: Clase que controla los eventos de la ventana de la ayuda HTML
             - `BorrarAvionController.java`: Clase que controla los eventos de la ventana que borra aviones
             - `DatosAeropuertoController.java`: Clase que controla los eventos de la ventana para añadir un aeropuerto o editar uno existente
             - `LoginController.java`: Clase que controla los eventos de la ventana para iniciar sesión
@@ -38,4 +39,6 @@ La estructura del proyecto es la siguiente:
         - `DatosAeropuerto.fxml`: Ventana para añadir un nuevo aeropuerto o editar uno existente
         - `Login.fxml`: Ventana para iniciar sesión en la aplicación
       - `imagenes`: Imágenes de la aplicación
+      - `sql`:
+        - `aeropuertos con imagen.sql`: Fichero para la creación de la base de datos en mariaDB
       - `style`: Estilos de la aplicación

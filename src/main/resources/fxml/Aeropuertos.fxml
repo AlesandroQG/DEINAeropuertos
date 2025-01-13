@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1000.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alesandro.aeropuertos.controller.AeropuertosController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1000.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alesandro.aeropuertos.controller.AeropuertosController">
    <children>
       <MenuBar maxWidth="1.7976931348623157E308">
          <menus>
@@ -56,7 +56,11 @@
                      </accelerator></MenuItem>
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Ayuda" />
+            <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ayudaHTML" text="Ayuda HTML" />
+                  <MenuItem mnemonicParsing="false" onAction="#ayudaPDF" text="Ayuda PDF" />
+               </items></Menu>
          </menus>
       </MenuBar>
       <FlowPane alignment="CENTER" prefWidth="200.0">

@@ -21,6 +21,30 @@
             <artifactId>mariadb-java-client</artifactId>
             <version>3.4.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>7.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.lowagie</groupId>
+                    <artifactId>itext</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports-chart-themes</artifactId>
+            <version>7.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>lib</groupId>
+            <artifactId>jPDFViewer</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jPDFViewer.v2022R1.23.jar</systemPath>
+        </dependency>
 
         <dependency>
             <groupId>org.openjfx</groupId>

@@ -140,6 +140,40 @@ public class AeropuertosController implements Initializable {
     }
 
     /**
+     * Función que se ejecuta cuando se pulsa el botón "Ayuda HTML" de aeropuertos. Abre un menú con la guía de usuario en formato HTML
+     *
+     * @param event
+     */
+    @FXML
+    void ayudaHTML(ActionEvent event) {
+        try {
+            Window ventana = rbPrivados.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/AyudaHTML.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/imagenes/avion.png")));
+            stage.setTitle("Ayuda HTML");
+            stage.initOwner(ventana);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.showAndWait();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            alerta("Error abriendo ventana, por favor inténtelo de nuevo");
+        }
+    }
+
+    /**
+     * Función que se ejecuta cuando se pulsa el botón "Ayuda PDF" de aeropuertos. Abre un menú con la guía de usuario en formato PDF
+     *
+     * @param event
+     */
+    @FXML
+    void ayudaPDF(ActionEvent event) {
+        //
+    }
+
+    /**
      * Función que se ejecuta cuando se pulsa el botón "Añadir" de aeropuertos. Abre un menú para añadir un aeropuerto nuevo
      *
      * @param event
