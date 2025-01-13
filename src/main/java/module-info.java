@@ -2,6 +2,7 @@ module com.alesandro.aeropuertos {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
+    requires javafx.web;
     requires java.sql;
     requires jdk.security.auth;
     requires org.checkerframework.checker.qual;
