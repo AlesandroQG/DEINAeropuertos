@@ -41,7 +41,7 @@ public class AyudaHTMLController implements Initializable {
         TreeItem<Help> r5 = new TreeItem<>(new Help("Conclusión", "conclusion.html"));
         rRoot.getChildren().addAll(r1,r2,r3,r4,r5);
         rItem.getChildren().add(rRoot);
-        TreeItem<Help> rAena = new TreeItem<>(new Help("Aena", "https://www.aena.es/es/pasajeros/pasajeros.html", false));
+        TreeItem<Help> rAena = new TreeItem<>(new Help("Aena", "https://www.google.es/", false));
         rItem.getChildren().add(rAena);
         // Ajustar propiedades de la vista árbol
         rRoot.setExpanded(true);
