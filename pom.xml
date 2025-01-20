@@ -38,11 +38,19 @@
             <artifactId>jasperreports-chart-themes</artifactId>
             <version>7.0.1</version>
         </dependency>
-        <!--<dependency>
-            <groupId>com.idrsolutions</groupId>
-            <artifactId>jpedal</artifactId>
-            <version>8.5.0</version>
-        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>pdf</groupId>
+            <artifactId>jPDFViewer</artifactId>
+            <version>1.10.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jPDFViewer.v2022R1.23.jar</systemPath>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.pdfbox</groupId>

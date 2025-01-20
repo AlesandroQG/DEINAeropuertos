@@ -1,5 +1,6 @@
 package com.alesandro.aeropuertos.controller;
 
+import com.qoppa.pdfViewer.PDFViewerBean;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -172,7 +173,10 @@ public class AeropuertosController implements Initializable {
      */
     @FXML
     void ayudaPDF(ActionEvent event) {
-        //PDDocument document = PDDocument.load(getClass().getResourceAsStream("/help/pdf/UserGuide.pdf"))
+        PDFViewerBean bean = getV
+        try (PDDocument document = PDDocument.load(getClass().getResourceAsStream("/help/pdf/UserGuide.pdf"))) {
+
+        }
     }
 
     /**
